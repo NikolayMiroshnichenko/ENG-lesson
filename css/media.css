@@ -190,6 +190,12 @@
   .about-us-top__content > p {
     font-size: 20px;
   }
+  .slider-container {
+    width: 400px;
+  }
+  .reviews-text {
+    font-size: 16px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -560,74 +566,101 @@
     font-size: 16px;
   }
   .price-list__item > p {
-      padding-left: 20px;
-      font-size: 10px;
+    padding-left: 20px;
+    font-size: 10px;
   }
   .price-bottom__old {
-      font-size: 20px;
+    font-size: 20px;
     left: 50%;
     transform: translateX(-50%);
   }
   .price-bottom__now {
-      font-size: 40px;
+    font-size: 40px;
   }
   .price-btn {
-      font-size: 12px;
+    font-size: 12px;
   }
   .price-bottom-text,
   .price-return-text {
-      font-size: 16px;
-      margin-bottom: 20px;
+    font-size: 16px;
+    margin-bottom: 20px;
   }
   .payment-step {
     padding: 20px 0;
   }
   .payment-step__item {
-      font-size: 34px;
-      -webkit-text-stroke-width: 2px;
-  } 
+    font-size: 34px;
+    -webkit-text-stroke-width: 2px;
+  }
   .payment-content__btn {
-      font-size: 8px;
-      white-space: nowrap;
-      padding: 10px 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    position: relative;
+    font-size: 12px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin-bottom: 10px;
   }
   .payment-content__item > h2 {
-      font-size: 10px;
+    font-size: 10px;
   }
   .payment-content__item > p {
-    font-size: 8px;
+    font-size: 10px;
   }
   .payment-bottom-text,
   .payment-bottom-title {
-      font-size: 16px;
+    font-size: 16px;
   }
   .questions-title {
-      text-align: center;
-      font-size: 18px;
+    text-align: center;
+    font-size: 18px;
   }
   .questions-list__item h2 {
-      font-size: 16px;
+    font-size: 16px;
   }
   .questions-list__item p {
-      font-size: 12px;
+    font-size: 12px;
   }
   .about-us-top {
-      flex-direction: column;
+    flex-direction: column;
   }
   .about-us-top__content {
-      width: 100%;
-      margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
-  .about-us-text-bg, .about-us-text, .about-us-top__content > p {
-      font-size: 12px;
+  .about-us-text-bg,
+  .about-us-text,
+  .about-us-top__content > p {
+    font-size: 12px;
   }
-  .footer  {
+  .footer {
     flex-direction: column;
   }
   .footer-item {
     width: 100%;
     margin-bottom: 40px;
   }
-
+  .slider-container {
+    width: 90%;
+    padding-bottom: 60px;
+  }
+  .reviews-text {
+    font-size: 16px;
+  }
+  .slider-btn {
+    top: auto;
+    bottom: 0;
+    transform: translateY(0);
+  }
+  .slider-btn__left {
+    left: 0;
+  }
+  .slider-btn__right {
+    right: 0;
+  }
+  .footer-item__text {
+    font-size: 14px;
+  }
 }
-
