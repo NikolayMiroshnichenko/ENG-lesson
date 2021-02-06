@@ -1,0 +1,68 @@
+.header-wrapper {
+  padding: 20px 0;
+  background: rgba(117, 139, 253, 0.15);
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-item {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-image: url(../img/logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.menu-btn {
+  position: relative;
+  width: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+.menu-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #27187e;
+  margin-bottom: 4px;
+}
+.menu-btn span:last-child {
+  margin-bottom: 0;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  transform: translateX(100%);
+  background-color: #e4e8ff;
+  z-index: 999;
+  padding: 40px;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.3s;
+}
+.nav.active {
+  transform: translateX(0);
+}
+.nav-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.nav-list__item {
+  padding: 15px 0;
+}
+.nav-list__item a {
+  font-size: 22px;
+  color: #27187e;
+  transition: all 0.3s;
+}
+.nav-list__item a:hover {
+  color: #fe0048;
+}

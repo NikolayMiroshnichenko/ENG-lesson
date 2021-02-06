@@ -1,0 +1,77 @@
+.problem-title {
+  font-weight: 800;
+  font-size: 44px;
+  color: #27187e;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+.problem-des {
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #27187e;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.problem-des span {
+  font-weight: 500;
+}
+.problem-list__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.problem-list__item.revers {
+  flex-direction: row-reverse;
+}
+.problem-list__img {
+  min-width: 400px;
+  width: 400px;
+}
+.problem-list__img img {
+  display: block;
+  width: 100%;
+}
+.problem-list__item.revers .problem-list-content p,
+.problem-list__item.revers .problem-list-content h3 {
+  text-align: left;
+}
+.problem-list-content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: right;
+  color: #27187e;
+  margin-bottom: 10px;
+}
+.problem-list-content p {
+  font-size: 20px;
+  color: #000000;
+  text-align: right;
+  margin-bottom: 40px;
+}
+.problem-list__item.revers .problem-list-content__item {
+  align-items: flex-start;
+}
+.problem-list-content__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.problem-list__item.revers .problem-list-content__item div {
+  width: 100%;
+}
+.problem-list-content__item div {
+  width: 80%;
+  margin-bottom: 30px;
+}
+.problem-text-bottom p {
+  text-align: center;
+  color: #27187e;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.problem-text-bottom p span {
+  color: #ff8600;
+  font-weight: 800;
+}

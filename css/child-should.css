@@ -1,0 +1,49 @@
+.child-should-wrapper {
+  border-bottom: 8px solid #ff8600;
+}
+.child-should-list {
+  padding: 40px 0;
+}
+.child-should-list__item {
+  display: flex;
+  margin-bottom: 40px;
+}
+.child-should-list__item > div {
+  width: 70%;
+}
+.child-should-list__item.revers {
+  flex-direction: row-reverse;
+}
+.child-should-list__title {
+  display: inline-block;
+  padding: 20px;
+  background: linear-gradient(90deg, #758bfd 0%, #aeb8fe 100%);
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  margin-bottom: 40px;
+}
+.child-should-list__item.revers {
+  padding: 0 20px;
+}
+.child-should-list__title h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  color: #27187e;
+}
+.child-should-list__item.revers {
+  text-align: right;
+}
+.child-should-list__block {
+  padding-left: 30px;
+}
+.child-should-list__item.revers .child-should-list__block {
+  width: 70%;
+  margin-left: 25%;
+}
+.child-should-list__block p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 40px;
+}

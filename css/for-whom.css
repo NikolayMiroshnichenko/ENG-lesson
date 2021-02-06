@@ -1,0 +1,65 @@
+.for-whom {
+  margin-bottom: 40px;
+}
+.for-whom-list-bottom h3,
+.for-whom___title {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #27187e;
+  margin-bottom: 20px;
+}
+.for-whom-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+.for-whom-list__item {
+  width: 400px;
+}
+.for-whom-list__top {
+  margin-bottom: 30px;
+}
+.for-whom-list__img {
+  width: 200px;
+  margin: 0 auto;
+}
+.for-whom-list__img img {
+  display: block;
+  width: 100%;
+}
+.for-whom-list__top h3 {
+  font-size: 20px;
+  text-align: center;
+}
+.for-whom-list__bottom {
+  padding: 60px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.for-whom-list__bottom p {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.for-whom-list__bottom.cencel {
+  background-image: url(../img/for-whom/cancel.png);
+}
+.for-whom-list__bottom.check {
+  background-image: url(../img/for-whom/check.png);
+}
+.for-whom-list-bottom {
+  width: 600px;
+  margin: 0 auto;
+}
+.for-whom-list-bottom h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.for-whom-list-bottom__item {
+  margin-bottom: 10px;
+}

@@ -1,3 +1,17 @@
+@media (max-width: 1440px) {
+  .main-img {
+    width: 30%;
+  }
+  .main-img-before {
+    width: 120px;
+    height: 120px;
+  }
+  .main-img-before h3,
+  .main-img-before p {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 1190px) {
   .container {
     width: 740px;
@@ -20,7 +34,7 @@
     height: 300px;
   }
   .play-english-list__item {
-    width: 100%;
+    width: 48%;
     height: auto;
     padding: 130px 60px 0 60px;
     margin-bottom: 60px;
@@ -47,6 +61,10 @@
     font-size: 48px;
     -webkit-text-stroke-width: 4px;
   }
+  .way-top {
+    display: flex;
+    justify-content: space-between;
+  }
   .use-list__img {
     width: 240px;
     height: 240px;
@@ -60,12 +78,31 @@
   .use-list__des p {
     font-size: 24px;
   }
-  .way-marker {
+  .way-desc {
     width: 70%;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 40px;
+  }
+  .way-marker {
+    width: 20%;
+    padding-bottom: 0;
+    background-image: url(../img/way/marker-mobill.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .way-marker::after {
+    display: none;
+    margin-bottom: none;
+  }
+  .way-marker div {
+    display: none;
   }
   .way-desc__text {
-    width: 350px;
+    width: 100%;
     font-size: 22px;
+    margin-bottom: 50px;
   }
   .child-should-list__title h2 {
     font-size: 24px;
@@ -120,41 +157,8 @@
   .attainment-list__item {
     padding-left: 40px;
   }
-  .lesson-img {
-    width: 300px;
-    min-width: 300px;
-    height: 300px;
-    min-height: 300px;
-  }
-  .lesson-img > div {
-    width: 260px;
-    height: 260px;
-  }
-  .lesson-content {
-    max-width: 420px;
-  }
-  .lesson-list__item .lesson-content p {
-    font-size: 18px;
-  }
-  .lesson-list__title > p {
-    font-size: 24px;
-  }
-  .lesson-list__title > p > br {
-    display: none;
-  }
-  .lesson-list__item.revers .long-text {
-    text-align: center;
-    white-space: normal;
-    transform: translateX(0);
-  }
-  .lesson-list__item .long-text {
-    font-size: 18px;
-    white-space: normal;
-    text-align: center;
-  }
-  .lesson-list__title > p {
-    white-space: pre-wrap;
-    transform: translateX(0);
+  .attainment-university {
+    transform: translateX(-40px);
   }
   .lesson-bottom {
     overflow: hidden;
@@ -163,14 +167,37 @@
   .price {
     width: 100%;
   }
+  .payment-container {
+    display: flex;
+    align-items: center;
+  }
   .payment-step {
-    width: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .payment-step::before {
+    width: 4px;
+    height: 100%;
+    left: 100%;
+    top: 0;
+  }
+  .payment-step__item {
+    margin-bottom: 40px;
+  }
+  .payment-step__item:last-child {
+    margin-bottom: 0;
   }
   .payment-content {
-    width: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
   }
   .payment-content__item {
-    width: 33%;
+    width: 100%;
+    margin-bottom: 40px;
   }
   .payment-content__item > h2,
   .payment-content__btn {
@@ -198,11 +225,26 @@
   }
 }
 @media (max-width: 767px) {
+  .orange-wrapper,
+  .blue-wrapper {
+    padding: 20px 0;
+  }
+  .main-wrapper {
+    height: auto;
+    min-height: auto;
+  }
+  .header-wrapper {
+    padding: 10px 0;
+  }
   .container {
     width: 90%;
   }
   .mabil-none {
     display: none;
+  }
+  .logo-item {
+    width: 80px;
+    height: 40px;
   }
   .nav {
     width: 90%;
@@ -228,8 +270,11 @@
   }
   .main {
     position: relative;
-    padding: 40px 0 160px 0;
+    padding: 0;
     flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    padding: 10px 0 160px 0;
   }
   .main-img {
     width: 100%;
@@ -241,18 +286,26 @@
   .main-content-title-top {
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   .main-content-text,
   .main-content-title {
     text-align: center;
+    line-height: 1;
   }
   .main-content-text.last {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+  }
+  .main-content-text {
+    font-size: 14px;
   }
   .main-btn {
     position: absolute;
     bottom: 40px;
+    display: block;
+    text-align: center;
+    width: 240px;
     margin-top: 0;
     left: 50%;
     white-space: nowrap;
@@ -267,6 +320,12 @@
   }
   .wrapper-title__item {
     font-size: 24px;
+  }
+  .for-whom-list {
+    margin-bottom: 20px;
+  }
+  .for-whom .wrapper-title__item {
+    margin: 0 50px;
   }
   .for-whom___title {
     font-size: 16px;
@@ -292,15 +351,19 @@
   }
   .problem-title {
     font-size: 18px;
+    font-weight: 900;
     margin-bottom: 20px;
   }
   .problem-des {
     font-size: 14px;
+    margin-bottom: 20px;
   }
   .problem-des > br {
     display: none;
   }
   .problem-list__item {
+    position: relative;
+    align-items: flex-end;
     margin-bottom: 20px;
   }
   .problem-list__img {
@@ -308,22 +371,64 @@
     min-width: 124px;
     height: 124px;
   }
+  .problem-list-content {
+    padding-top: 90px;
+  }
   .problem-list-content h3 {
-    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    font-weight: 700;
   }
   .problem-list-content p {
-    font-size: 12px;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    font-size: 14px;
+    width: 280px;
     margin-bottom: 20px;
+  }
+  .problem-list__item.revers .problem-list-content h3,
+  .problem-list__item.revers .problem-list-content p {
+    position: static;
+    font-weight: 700;
+  }
+  .problem-list__item.revers .problem-list-content h3 span {
+    color: #ff8600;
+  }
+  .problem-list__item.revers .problem-list-content p {
+    font-weight: 700;
+    color: #27187e;
+  }
+  .problem-list__item.revers .problem-list-content {
+    padding: 0;
+  }
+
+  .problem-list-content__item {
+    align-items: flex-end;
   }
   .problem-list-content__item div {
-    font-size: 10px;
-    margin-bottom: 10px;
+    width: 100%;
+    font-size: 12px;
+    width: 90%;
+    margin-bottom: 8px;
   }
   .text-block {
-    padding: 40px 0 20px 0;
+    padding: 20px 0 0 0;
+  }
+  .play-english-list {
+    justify-content: center;
   }
   .play-english-list__item {
+    padding: 100px 0 0 0;
     margin-bottom: 20px;
+  }
+  .play-english-list__item::before {
+    width: 100px;
+    height: 100px;
   }
   .text-block h2,
   .problem-text-bottom p {
@@ -335,9 +440,13 @@
   }
   .play-english-list__item h3 {
     font-size: 14px;
+    font-weight: 700;
+  }
+  .after-workshop-list {
+    margin-bottom: 10px;
   }
   .after-workshop-top__text {
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 0;
     margin-bottom: 10px;
   }
@@ -353,18 +462,24 @@
     font-size: 14px;
     text-align: center;
   }
+  .after-workshop-bottom {
+    margin-top: 10px;
+  }
   .after-workshop-bottom li p {
     font-size: 20px;
     -webkit-text-stroke-width: 2px;
   }
   .learning-skill {
-    padding: 40px 0 0 0;
+    padding: 10px 0 0 0;
   }
   .learning-skill p {
     font-size: 18px;
   }
+  .learning-skill p:last-child {
+    margin-bottom: 10px;
+  }
   .use-list__item {
-    margin-top: 40px;
+    margin-top: 20px;
   }
   .use-list__img {
     width: 100px;
@@ -377,14 +492,20 @@
     bottom: 0;
   }
   .use-list__item.revers .use-list__des {
-    left: 20px;
+    left: auto;
+    right: 80px;
   }
   .use-list__des p span,
   .use-list__des p {
     font-size: 10px;
   }
+  .way-desc {
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
   .way-desc__text {
-    width: 48%;
+    width: 90%;
   }
   .way-marker div::before,
   .way-marker div {
@@ -408,11 +529,14 @@
     margin: 0 auto;
     margin-bottom: 20px;
   }
+  .child-should-list__item.revers {
+    padding: 0;
+  }
   .child-should-list__item > div {
     width: 100%;
   }
   .child-should-list__title h2 {
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
   .child-should-list__title h2 > br {
@@ -425,17 +549,47 @@
     width: 100%;
     margin-left: 0;
   }
+  .child-should-list__block p {
+    margin-bottom: 10px;
+  }
+  .child-should-list__item:last-child {
+    margin-bottom: 0;
+  }
+  .autor-content {
+    position: static;
+  }
+  .autor-list__item {
+    padding-top: 50px;
+  }
+  .autor-list__item.revers {
+    padding-top: 0;
+  }
   .autor-content__title {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 16px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 0;
+  }
+  .autor-content__title > br {
+    display: none;
   }
   .autor-content > p {
     font-size: 12px;
     padding-left: 20px;
+    margin-bottom: 6px;
+  }
+  .autor-content__highlight {
+    font-size: 12px !important;
   }
   .item-list::before {
     width: 14px;
     height: 14px;
+  }
+  .autor-list__item {
+    position: relative;
   }
   .autor-content {
     width: 58%;
@@ -469,10 +623,19 @@
   .attainment-title {
     text-align: center;
     font-size: 22px;
+    margin-bottom: 20px;
   }
   .attainment-list__item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-left: 30px;
+  }
+  .attainment-university {
+    transform: translateX(-20px);
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .attainment-university .mobill-none {
+    display: none;
   }
   .attainment-list__number {
     font-size: 40px;
@@ -485,10 +648,18 @@
   .attainment-list__item:nth-child(2) {
     width: 100%;
   }
+  .attainment-university li {
+    width: 130px;
+    margin: 10px 0;
+  }
+  .attainment-university__text {
+    font-size: 10px;
+  }
   .attainment-university__item {
     width: 75px;
     height: 75px;
-    margin: 0 10px 10px 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
   .attainment-university__item > div {
     width: 60px;
@@ -506,42 +677,17 @@
     padding-left: 20px;
   }
   .lesson {
-    padding: 80px 0 20px 0;
+    padding: 20px 0 20px 0;
+  }
+  .lesson-top-text-container > p {
+    font-size: 16px;
+    width: 180px;
   }
   .lesson-top-text {
     font-size: 16px;
   }
-  .lesson-list__title {
-    background-color: rgba(255, 255, 255, 0);
-  }
-  .lesson-list__item .lesson-content {
-    width: 100%;
-  }
-  .lesson-img {
-    display: block;
-    margin-bottom: 40px;
-  }
-  .lesson-list__item.revers,
-  .lesson-list__item {
-    flex-direction: column;
-  }
-  .lesson-list__item {
-    padding: 160px 0 120px 0;
-  }
-  .lesson-img {
-    width: 260px;
-    min-width: 260px;
-    height: 260px;
-    min-height: 260px;
-  }
-  .lesson-img > div {
-    width: 220px;
-    height: 220px;
-  }
-  .lesson-img > div > img {
-    width: 140px;
-    height: 140px;
-    object-fit: contain;
+  .lesson-top-text.mb {
+    margin-bottom: 20px;
   }
   .lesson-bottom-title__item {
     font-size: 14px;
@@ -558,15 +704,22 @@
     border-radius: 20px;
   }
   .price-title span {
-    font-size: 20px;
+    font-size: 24px;
     -webkit-text-stroke-width: 1px;
     margin-right: 10px;
   }
   .price-title {
-    font-size: 14px;
+    font-size: 20px;
   }
   .price-plus {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .price-list {
+    margin-bottom: 40px;
+  }
+  .price-list__item {
+    margin-bottom: 10px;
   }
   .price-list__item > p {
     padding-left: 20px;
@@ -578,7 +731,7 @@
     transform: translateX(-50%);
   }
   .price-bottom__now {
-    font-size: 40px;
+    font-size: 34px;
   }
   .price-btn {
     font-size: 12px;
@@ -589,28 +742,34 @@
     margin-bottom: 20px;
   }
   .payment-step {
-    padding: 20px 0;
+    padding-bottom: 0;
   }
   .payment-step__item {
     font-size: 34px;
     -webkit-text-stroke-width: 2px;
+    margin-bottom: 70px;
+  }
+  .payment-content__item {
+    margin-bottom: 30px;
   }
   .payment-content__btn {
-    width: 100%;
+    width: 70%;
     display: block;
     text-align: center;
     padding: 12px 0;
+    margin: 0 auto;
     position: relative;
-    font-size: 8px;
+    font-size: 14px;
     white-space: nowrap;
     box-sizing: border-box;
     margin-bottom: 10px;
   }
   .payment-content__item > h2 {
-    font-size: 10px;
+    font-size: 16px;
+    margin-bottom: 0;
   }
   .payment-content__item > p {
-    font-size: 10px;
+    font-size: 14px;
   }
   .payment-bottom-text,
   .payment-bottom-title {
@@ -626,6 +785,9 @@
   .questions-list__item p {
     font-size: 12px;
   }
+  .about-us {
+    padding: 20px 0 0 0;
+  }
   .about-us-top {
     flex-direction: column;
   }
@@ -638,12 +800,22 @@
   .about-us-top__content > p {
     font-size: 12px;
   }
+  .footer-wrapper {
+    padding: 10px 0;
+  }
   .footer {
-    flex-direction: column;
+    position: relative;
+    padding: 20px 0 60px 0
   }
   .footer-item {
-    width: 100%;
-    margin-bottom: 40px;
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .footer-item.link-list {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
   }
   .slider-container {
     width: 90%;
@@ -664,6 +836,27 @@
     right: 0;
   }
   .footer-item__text {
-    font-size: 14px;
+    font-size: 7px;
+    margin-bottom: 8px;
+  }
+  .footer-item__text.right {
+    text-align: right;
+  }
+  .footer-item__btn {
+    font-size: 8px;
+    padding: 8px 0;
+    width: 120px;
+    margin-bottom: 8px;
+  }
+  .footer-item__link.instagram {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-item__link.email {
+    width: 50px;
+    height: 45px;
+  }
+  .accordion {
+    padding-right: 20px;
   }
 }

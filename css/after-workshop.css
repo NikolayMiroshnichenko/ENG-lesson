@@ -1,0 +1,70 @@
+.after-workshop {
+  padding: 40px 0;
+}
+.after-workshop-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.after-workshop-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  margin: 0 80px 20px 80px;
+  border-radius: 50%;
+  background: rgba(228, 232, 255, 0.43);
+}
+.after-workshop-list__item span {
+  color: rgba(0, 0, 0, 0);
+  line-height: 1;
+  font-weight: 800;
+  font-size: 144px;
+  -webkit-text-stroke-width: 6px;
+  -webkit-text-stroke-color: #27187e;
+}
+.after-workshop-list__item p {
+  font-weight: 600;
+  font-size: 22px;
+}
+.after-workshop-top__text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+.after-workshop-top__text span {
+  font-weight: 600;
+}
+.after-workshop-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.after-workshop-bottom li p {
+  font-size: 54px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0);
+  line-height: 1;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #27187e;
+}
+.learning-skill {
+  padding: 20px 0 0 0;
+}
+.learning-skill p {
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #27187e;
+  margin-bottom: 40px;
+}
+.learning-skill p span {
+  font-weight: 800;
+  color: #ff8600;
+}

@@ -1,0 +1,94 @@
+.attainment-wrapper {
+  border-top: 8px solid #ff8600;
+}
+.attainment-title {
+  font-weight: 800;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #27187e;
+  margin-bottom: 60px;
+}
+.attainment-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.attainment-list__item {
+  position: relative;
+  padding-left: 60px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+.attainment-list__item:nth-child(1) {
+  width: 100%;
+}
+.attainment-list__item:nth-child(2) {
+  width: 50%;
+}
+.attainment-list__item:nth-child(3) {
+  width: 50%;
+}
+.attainment-list__number {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 900;
+  font-size: 64px;
+  transform: translateY(-15%);
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0);
+  line-height: 1;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #27187e;
+}
+.attainment-list__title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.attainment-university {
+  position: relative;
+  display: flex;
+  transform: translateX(-60px);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0 20px 0;
+}
+.attainment-university li {
+  width: 140px;
+  margin: 20px 30px;
+}
+.attainment-university__item {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(90deg, #758bfd 0%, #aeb8fe 100%);
+  border-radius: 50%;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 10px;
+}
+.attainment-university__item > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 130px;
+  height: 130px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attainment-list__last {
+  display: flex;
+}
+.attainment-list__text {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.attainment-university__text {
+  font-size: 14px;
+  text-align: center;
+}
+.attainment-list__last p {
+  margin-right: 20px;
+}

@@ -1,0 +1,107 @@
+.use-list__item {
+  position: relative;
+  display: flex;
+  justify-content: start;
+}
+.use-list__item.revers {
+  justify-content: flex-end;
+}
+.use-list__img {
+  display: block;
+  width: 420px;
+  height: 420px;
+}
+.use-list__item.revers .use-list__des {
+  left: 0;
+}
+.use-list__des {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 40px;
+  left: 300px;
+  width: 920px;
+  height: 100px;
+  background: #aeb8fe;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+}
+.use-list__des p {
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #27187e;
+}
+.use-list__des p span {
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: lowercase;
+}
+.way-marker {
+  position: relative;
+  width: 860px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+}
+.way-marker::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 8px;
+  background-color: #ff8600;
+  border-radius: 10px;
+}
+.way-marker div {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+.way-marker div::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 130px;
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.way-marker div:nth-child(1):before {
+  background-image: url(../img/way/left-marker.png);
+}
+.way-marker div:nth-child(2):before {
+  background-image: url(../img/way/right-marker.png);
+}
+.way-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.way-desc__text {
+  width: 450px;
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+}
+.way-bottom h3 {
+  text-align: center;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #27187e;
+  margin-bottom: 20px;
+}
+.way-bottom h3 span {
+  font-weight: 600;
+}
+.way-bottom p {
+  text-align: center;
+  font-size: 24px;
+}
